@@ -1,0 +1,11 @@
+[package]
+name = "convert"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4"
+bstr = "1.9.1"
+clap = { version = "4.0.18", features = ["derive"] }
+tempdir = "0.3"
+ccl-fxhash = "3.0.0"
