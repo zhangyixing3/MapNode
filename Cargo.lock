@@ -132,17 +132,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5b63caa9aa9397e2d9480a9b13673856c78d8ac123288526c37d7839f2a86990"
 
 [[package]]
-name = "convert"
-version = "0.1.0"
-dependencies = [
- "bstr",
- "ccl-fxhash",
- "clap",
- "log",
- "tempdir",
-]
-
-[[package]]
 name = "fuchsia-cprng"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -171,6 +160,17 @@ name = "log"
 version = "0.4.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e"
+
+[[package]]
+name = "mapnode"
+version = "0.1.0"
+dependencies = [
+ "bstr",
+ "ccl-fxhash",
+ "clap",
+ "log",
+ "tempdir",
+]
 
 [[package]]
 name = "memchr"
