@@ -1,11 +1,20 @@
-#### You can use MapNode to match the two graph nodes based on their coordinates.
-1. if you have minigraph-cactus gfa, and you want to draw 2D-figure by odgi, you have to sort the graph, unfortunatelly, the gfa file will change node id after sorting, so this tool will help you to match the two graph nodes based on their coordinates.
-2. if you have two gfa files, the first one is the original gfa file, and the second one is chopped by 'vg mod -X', you can also use this tool to match the two graph nodes based on their coordinates.
+### MapNode: matching the pangenome nodes tool
 
-```
+#### Overview
+MapNode matches node IDs between modified GFA files in two scenarios:
+1. **Sorted GFA for Visualization**  
+   When using `odgi` to draw 2D figures from minigraph-cactus GFA files, sorting changes node IDs. MapNode maps original ↔ sorted node IDs.
+2. **Chopped GFA Comparison**  
+   Maps nodes between an original GFA and one processed with `vg mod -X`.
+
+---
+
+#### Installation
+```bash
 git clone git@github.com:zhangyixing3/MapNode.git
 cd MapNode && cargo build -j 2 --release
 ```
+#### Run Mapping Command
 ```
 $ convert
 Usage: convert <raw.gfa> <sub.gfa> > output.txt
